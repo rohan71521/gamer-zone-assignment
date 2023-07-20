@@ -180,21 +180,24 @@ background-clip: text;
     flex-direction: column-reverse;
 }
 .banner-image{
-    width: 80%;
+    width: 90%;
 }
 
 .banner-content{
-    padding: 100px  50px;
+    padding: 100px  50px 0px;
 }
 .gamer{
     flex-direction: column;
 }
 .gamer-img{
-    width: 90%;
+    width: 98%;
 }
 .gamer-content{
     width: 90%;
     text-align: center;
+}
+.gamer-content>p,.btn{
+    font-size: 16px;
 }
 
 h2{
@@ -208,4 +211,30 @@ h2{
     font-size: 22px;
     font-family: 700;
 }
+}
+@media only screen and (min-width: 576px) and (max-width:768px){
+    .container{
+        max-width: 700px;
+    }
+  
+    .gamer{
+        flex-direction: column;
+    }
+    .gamer-img{
+        width: 98%;
+    }
+    .gamer-content{
+        width: 90%;
+        text-align: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    
+    }
+    .banner-image{
+        width: 98%;
+    }
+    .banner-content{
+        width: 50%;
+    }
 }
